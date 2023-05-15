@@ -41,7 +41,8 @@ h6 {
 }
 
 p,
-a {
+a,
+li {
   font-family: "Inder", sans-serif;
   color: var(--text-color);
 }
@@ -76,3 +77,31 @@ h6 {
 .p-large {
   font-size: 1.2rem;
 }
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  height: 5rem;
+  border-bottom: 2px #a1704c solid;
+}
+
+.navbar img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-item {
+  padding-left: 1rem;
+}
+
+.navbar-item:hover,
+.navbar-item:active {
+  color: var(--primary);
+}
+/* End Navbar */
