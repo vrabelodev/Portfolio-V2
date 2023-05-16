@@ -21,6 +21,7 @@
 html {
   padding: 0;
   margin: 0;
+  transition: all 0.2s ease-in;
 }
 
 body {
@@ -51,6 +52,11 @@ a,
 li {
   font-family: "Inder", sans-serif;
   color: var(--text-color);
+}
+
+a:hover,
+a:active {
+  color: var(--primary);
 }
 
 h1 {
@@ -88,10 +94,20 @@ h6 {
 .navbar {
   display: flex;
   height: 5rem;
-  border-bottom: 2px #a1704c solid;
   padding: 0;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand p {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
 }
 
 .navbar img {
@@ -106,22 +122,30 @@ h6 {
 }
 
 .navbar a {
-  padding-left: 1rem;
   text-decoration: none;
+  padding: 1rem;
 }
 
 .navbar-theme {
   border: none;
   background-color: transparent;
-  margin: 0;
-  padding: 0;
   width: 24px;
   height: 24px;
 }
 
+.navbar-theme span {
+  pointer-events: none;
+}
+
 .navbar-theme:hover {
-  border: none;
   background-color: transparent;
   transform: scale(1.2);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+[data-theme="light"] .d-block-light,
+[data-theme="dark"] .d-block-dark {
+  display: none;
 }
 /* End Navbar */
