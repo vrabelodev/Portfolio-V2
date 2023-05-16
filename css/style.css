@@ -92,16 +92,23 @@ h6 {
 
 /* Start Navbar */
 .navbar {
+  background-color: aqua;
+}
+
+.navbar-wrapper {
   display: flex;
   height: 5rem;
-  padding: 0;
   justify-content: space-between;
   align-items: center;
+  background-color: blueviolet;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 .navbar-brand p {
@@ -121,7 +128,7 @@ h6 {
   display: flex;
 }
 
-.navbar a {
+.navbar-item {
   text-decoration: none;
   padding: 1rem;
 }
@@ -139,7 +146,7 @@ h6 {
 
 .navbar-theme:hover {
   background-color: transparent;
-  transform: scale(1.2);
+  transform: scale(1.15);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -149,3 +156,11 @@ h6 {
   display: none;
 }
 /* End Navbar */
+
+/* Start Hero */
+.hero {
+  height: 80%;
+  width: auto;
+  padding-top: 5rem;
+}
+/* End Hero */
