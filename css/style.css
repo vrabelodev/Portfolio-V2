@@ -47,6 +47,7 @@ h4,
 h5,
 h6 {
   font-family: "Forum", cursive;
+  font-weight: 400;
   color: var(--text-heading);
 }
 
@@ -101,6 +102,7 @@ h6 {
   left: 0;
   right: 0;
   transition: background-color 500ms;
+  z-index: 1;
 }
 
 .navbar.sticking {
@@ -177,6 +179,10 @@ h6 {
 .hero {
   height: 80dvh;
   width: auto;
-  padding-top: 5rem;
+  padding-top: 5rem;  
+}
+
+.hero-img {
+  transform: translate(110%, -39.5%);
 }
 /* End Hero */
