@@ -137,6 +137,7 @@ h6 {
 .navbar-items {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 .navbar-item {
