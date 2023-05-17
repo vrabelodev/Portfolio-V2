@@ -183,10 +183,8 @@ h6 {
 }
 
 .hero-img {
-  /* transform: translate(110%, -39.5%);*/
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 1;
   right: 0;
 }
 /* End Hero */
