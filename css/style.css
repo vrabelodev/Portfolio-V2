@@ -37,6 +37,7 @@ img,
 svg,
 video {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -92,6 +93,11 @@ h6 {
 
 .p-large {
   font-size: 1.2rem;
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--primary);
 }
 
 /* Start Navbar */
@@ -186,5 +192,9 @@ h6 {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.hero-wrapper {
+  height: 100%;
 }
 /* End Hero */
