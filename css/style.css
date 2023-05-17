@@ -186,12 +186,10 @@ h6 {
   height: 80dvh;
   width: auto;
   padding-top: 5rem;
-}
-
-.hero-img {
-  position: absolute;
-  top: 0;
-  right: 0;
+  background-image: url(/assets/hero-img.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 .hero-wrapper {
