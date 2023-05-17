@@ -7,6 +7,7 @@
   --text-color: hsl(225, 14%, 11%);
   --bg-color: hsl(0, 0%, 98%);
   --bg-component: hsl(0, 5%, 87%);
+  --bg-color-transparency: hsl(0, 0%, 98%, 0.85);
   --bg-component-transparency: hsla(0, 6%, 87%, 0.85);
 }
 
@@ -17,6 +18,7 @@
   --text-color: hsl(0, 0%, 98%);
   --bg-color: hsl(240, 9%, 13%);
   --bg-component: hsl(225, 14%, 11%);
+  --bg-color-transparency: hsl(240, 9%, 13%, 0.85);
   --bg-component-transparency: hsl(225, 14%, 11%, 0.85);
 }
 
@@ -93,10 +95,16 @@ h6 {
 
 /* Start Navbar */
 .navbar {
-  background-color: var(--bg-component-transparency);
-  position: sticky;
+  background-color: var(--bg-color-transparency);
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   transition: background-color 500ms;
+}
+
+.navbar.sticking {
+  background-color: var(--bg-component);
 }
 
 .navbar-wrapper {
@@ -162,7 +170,7 @@ h6 {
 
 /* Start Hero */
 .hero {
-  height: 80%;
+  height: 80dvh;
   width: auto;
   padding-top: 5rem;
 }

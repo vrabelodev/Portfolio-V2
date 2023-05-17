@@ -30,8 +30,8 @@ navbar.before(scrollWatcher);
 
 const navObserver = new IntersectionObserver(
   (entries)=>{
-    navbar.classList.toggle("sticking")
-  }
+    navbar.classList.toggle("sticking", !entries[0].isIntersecting)
+  }, {rootMargin: "200px 0px 0px 0px"}
 );
 
 navObserver.observe(scrollWatcher);
