@@ -179,10 +179,14 @@ h6 {
 .hero {
   height: 80dvh;
   width: auto;
-  padding-top: 5rem;  
+  padding-top: 5rem;
 }
 
 .hero-img {
-  transform: translate(110%, -39.5%);
+  /* transform: translate(110%, -39.5%);*/
+  position: fixed;
+  top: 0;
+  left: 1;
+  right: 0;
 }
 /* End Hero */
