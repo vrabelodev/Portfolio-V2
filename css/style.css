@@ -25,6 +25,7 @@
 html {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -199,16 +200,30 @@ h6 {
 
 /* Start About */
 .about-wrapper {
-  margin-left: auto;
-}
-
-/*.about-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 90dvw;
-  border-radius: 1.2rem;
+  width: 90%;
   transform: translateY(-4.8rem);
   background-color: var(--bg-component-transparency);
+  border-radius: 1.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
-*/
+
+.about-wrapper h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.img-about {
+  filter: grayscale();
+  aspect-ratio: 3/4;
+  max-width: 12rem;
+}
+
+.img-about:hover {
+  filter: none;
+  transition: all 1s ease-in-out;
+}
 /* End About */
