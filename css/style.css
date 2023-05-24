@@ -188,7 +188,7 @@ h6 {
   padding-top: 5rem;
   background-image: url(/assets/hero-img.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
   background-size: contain;
 }
 
@@ -196,3 +196,19 @@ h6 {
   height: 100%;
 }
 /* End Hero */
+
+/* Start About */
+.about-wrapper {
+  margin-left: auto;
+}
+
+/*.about-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90dvw;
+  border-radius: 1.2rem;
+  transform: translateY(-4.8rem);
+  background-color: var(--bg-component-transparency);
+}
+*/
+/* End About */
