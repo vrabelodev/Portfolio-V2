@@ -216,31 +216,25 @@ h6 {
   padding: 0 0 2rem 0;
 }
 
-.about-pictures{
-  display: flex;
-  align-items: start;
-  justify-content: center;
+.about-pictures {
 }
 
 .img-about {
   filter: grayscale();
-  aspect-ratio: 3/4;
-  max-width: 12rem;
   border-radius: 0.4rem;
+  margin: 1rem;
 }
 
 .img-about:hover {
   filter: none;
   transition: all 0.2s ease-in-out;
-  z-index: 1000;
 }
 
 .img-about-left {
-  transform: rotate(-15deg);
+  aspect-ratio: 1/1;
 }
 
 .img-about-right {
-  transform: rotate(15deg);
-  
+  aspect-ratio: 16/9;
 }
 /* End About */
