@@ -200,30 +200,47 @@ h6 {
 
 /* Start About */
 .about-wrapper {
-  width: 90%;
+  width: 95%;
   transform: translateY(-4.8rem);
   background-color: var(--bg-component-transparency);
   border-radius: 1.2rem;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
 .about-wrapper h2 {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2rem 0;
+}
+
+.about-pictures{
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
 .img-about {
   filter: grayscale();
   aspect-ratio: 3/4;
   max-width: 12rem;
+  border-radius: 0.4rem;
 }
 
 .img-about:hover {
   filter: none;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.img-about-left {
+  transform: rotate(-15deg);
+}
+
+.img-about-right {
+  transform: rotate(15deg);
+  
 }
 /* End About */
