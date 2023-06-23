@@ -198,20 +198,17 @@ h6 {
 
 /* Start About */
 .about-wrapper {
-  width: 98%;
   transform: translateY(-4.8rem);
   background-color: var(--bg-component-transparency);
-  border-radius: 1.2rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0rem 0 2rem 0;
 }
 
 .about-wrapper h2 {
   text-align: center;
   margin: 0;
-  padding: 0 0 2rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .img-about {
